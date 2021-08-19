@@ -41,9 +41,3 @@ def h5p_count(url):
 print ('Gunning Fog Index =',(readability))
 print ('Total images =', image_count(site))
 print ('Total H5Ps =', h5p_count(site))
-
-
-#--[
-# Page Density = (total number of words on page) x (Gunning Fog index) x 
-# ((#image * .25)+(#h5p * .5)) x (video duration in s * .15) / 100 
-# ]
