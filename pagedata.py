@@ -38,7 +38,7 @@ def h5p_count(url):
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 
-#Download the latest chrome from https://chromedriver.chromium.org/downloads and update the location
+#download the latest chrome from https://chromedriver.chromium.org/downloads and update the location
 chrome_driver_path = "C:\\Users\\rncal\\Downloads\\chromedriver"
 url = site
 
@@ -70,7 +70,7 @@ timetotal = (sum(x * int(t) for x, t in zip([3600, 60, 1], time.split(":"))))
 #Technical Page Score formula
 tps = ((readability) + (image_count(site)*2) +(h5p_count(site)*3.5) + (int(timetotal/60)/10))
 
-#crawl the challenge or topic title
+#crawl the page for topic title
 title = soup.find(attrs={'class': 'u-bolt-inline c-bolt-text c-bolt-text--bold c-bolt-text--normal c-bolt-text--small'})
 titletext = title.text   
 
